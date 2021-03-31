@@ -8,6 +8,7 @@ require("dotenv").config();
 
 const indexRouter = require("./routes/index");
 const loginRouter = require("./routes/login");
+const signupRouter = require("./routes/signUp");
 
 const app = express();
 app.use(cors());
@@ -20,6 +21,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/", loginRouter);
+app.use("/", signupRouter);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

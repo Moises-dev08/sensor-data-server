@@ -13,4 +13,7 @@ module.exports = {
 
   // INVALID LOGIN FIELD WARNING
   INVALID_EMAIL_OR_PASS: "Invalid email or password",
+
+  // SIGNUP URL:
+  SIGNUP_URL: "/signup",
 };
