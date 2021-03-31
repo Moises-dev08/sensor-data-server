@@ -3,11 +3,12 @@ const consts = require("../constant/const");
 const generateAccessToken = require("./newToken");
 
 exports.login = async (req, res, next) => {
-  const emailInput = req.body.email;
-  const passwordInput = req.body.password;
-  const token = await generateAccessToken(emailInput);
-
   try {
+    const emailInput = req.body.email;
+    const passwordInput = req.body.password;
+
+    const token = await generateAccessToken(emailInput);
+
     const email = await loginQuery.getUserByEmail(emailInput);
     const password = await loginQuery.getUserByPassword(passwordInput);
 
