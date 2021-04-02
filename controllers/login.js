@@ -13,7 +13,9 @@ exports.login = async (req, res, next) => {
     const password = await loginQuery.getUserByPassword(passwordInput);
 
     if (email && password) {
-      res.status(consts.SUCCESS_RESPONSE).send(token);
+      res
+        .status(consts.SUCCESS_RESPONSE)
+        .json({ auth: true, token: token, email: email });
     } else {
       res.status(consts.FAILURE_500_RESPONSE).send({ ok: false });
     }
