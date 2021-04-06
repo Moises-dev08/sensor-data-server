@@ -16,4 +16,7 @@ module.exports = {
 
   // SIGNUP URL:
   SIGNUP_URL: "/signup",
+
+  //NEW CLIENT URL:
+  NEW_CLIENT_URL: "/newClient",
 };
