@@ -21,8 +21,8 @@ module.exports = {
   NEW_CLIENT_URL: "/newClient",
 
   //MODIFY CLIENT URL:
-  MODIFY_CLIENT_URL: "/modifyClient",
+  MODIFY_CLIENT_URL: "/modifyClient:id",
 
   //DELETE CLIENT URL:
-  DELETE_CLIENT_URL: "/deleteClient",
+  DELETE_CLIENT_URL: "/deleteClient:id",
 };
